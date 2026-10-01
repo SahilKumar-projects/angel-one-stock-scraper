@@ -47,20 +47,18 @@ The scraper extracts:
 angel_one_stock_scraper/
 │
 ├── src/
-│   ├── __init__.py
 │   ├── config.py
 │   ├── browser.py
 │   ├── scraper.py
 │   ├── csv_writer.py
+    |--database_connection.py
 │   └── main.py
 │
 ├── output/
-│   └── .gitkeep
+│   └── 
 │
 ├── .gitignore
 ├── README.md
-├── requirements.txt
-└── LICENSE
 ```
 
 ## How the Project Works
@@ -231,12 +229,12 @@ MAX_RETRIES = 3
 
 ### Configuration Parameters
 
-| Parameter | Description |
-|---|---|
-| `LARGE_CAP_URL` | URL used to start stock scraping |
-| `MAX_STOCKS` | Maximum stock value used by the project configuration |
-| `WAIT_TIMEOUT` | Maximum Selenium wait time |
-| `MAX_RETRIES` | Number of extraction retry attempts |
+| Parameter         | Description                                           |
+| ----------------- | ----------------------------------------------------- |
+| `LARGE_CAP_URL` | URL used to start stock scraping                      |
+| `MAX_STOCKS`    | Maximum stock value used by the project configuration |
+| `WAIT_TIMEOUT`  | Maximum Selenium wait time                            |
+| `MAX_RETRIES`   | Number of extraction retry attempts                   |
 
 ## Error Handling
 
